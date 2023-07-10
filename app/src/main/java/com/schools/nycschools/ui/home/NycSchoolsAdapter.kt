@@ -131,9 +131,6 @@ class NycSchoolsAdapter(
     fun update(newList: List<NYCSchoolResponseItem>) {
         list.clear()
         list.addAll(newList)
-    }
-
-    fun updateAdapter(newList: List<NYCSchoolResponseItem>) {
         schoolsFilterList.clear()
         schoolsFilterList.addAll(newList)
         notifyItemRangeChanged(0, list.size)
