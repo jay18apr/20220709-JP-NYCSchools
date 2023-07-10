@@ -22,10 +22,10 @@ class HomeViewModel @Inject constructor(private val schoolsUseCase: SchoolsUseCa
     val homePageState = MutableStateFlow<Output<List<NYCSchoolResponseItem>>>(Output.loading(null))
 
     init {
-        fetchHomePage()
+        fetchSchoolsPage()
     }
 
-    private fun fetchHomePage() {
+    private fun fetchSchoolsPage() {
         viewModelScope.launch {
             schoolsUseCase.executeHomePage().collect {
                 homePageState.value = it
