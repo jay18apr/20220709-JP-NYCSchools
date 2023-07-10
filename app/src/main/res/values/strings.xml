@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NYC Schools</string>
+    <string name="try_again">Try Again</string>
+    <string name="error_title">Error Title</string>
+
+    <string name="test_taker">Test Taker Avg.\n %1$s</string>
+    <string name="math">Math Avg.\n %1$s</string>
+    <string name="reading">Reading Avg.\n %1$s</string>
+    <string name="writing">Writing Avg.\n %1$s</string>
+</resources>
